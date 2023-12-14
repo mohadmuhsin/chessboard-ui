@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    
+}
+
+.cell.black {
+    background-color: #000000;
+    
+}
+
+.cell.white {
+    background-color: #ffffff;
+}
+.cell.attack{
+    background-color: rgb(3, 0, 177);
+}
+
+.cell:hover{
+    background-color: rgb(0, 132, 255);
+}
+
+
